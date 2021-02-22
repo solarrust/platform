@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DEFAULT_PATH_TO_CONTENT="../content"
-symlinksTo=("src/html" "src/css" "src/js")
+symlinksTo=("html" "css" "js")
 shouldSetSymlinks=false
 pwd
 
@@ -35,5 +35,5 @@ for symlink in ${symlinksTo[*]}; do
     source="../$source"
   fi
 
-  ln -sf "$source" "$symlink"
+  ln -sf "$source" "src/$symlink"
 done
