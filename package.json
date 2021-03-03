@@ -16,7 +16,8 @@
     "url": "https://github.com/y-doka/platform"
   },
   "scripts": {
-    "start": "eleventy --serve --quiet",
+    "start": "docker-compose up",
+    "dev": "eleventy --serve --quiet",
     "editorconfig": "editorconfig-checker",
     "test": "npm run editorconfig",
     "build": "eleventy"
