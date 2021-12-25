@@ -6,6 +6,7 @@ title: 'Поиск'
 {% from "blocks/header.njk" import header, divider %}
 {% from "blocks/footer.njk" import footer with context %}
 {% from "blocks/logo.njk" import logo %}
+{% from "blocks/logo-rudolf.njk" import logoRudolf %}
 
 {% set isLogoContrastColor = hasCategory %}
 
@@ -13,7 +14,8 @@ title: 'Поиск'
   <header class="header search-page__header">
     <div class="header__inner header__inner--main font-theme font-theme--code search-page__header-inner">
       <div class="header__logo search-page__logo">
-        {{ logo(isLink=true, isContrastColor=isLogoContrastColor) }}
+{#        {{ logo(isLink=true, isContrastColor=isLogoContrastColor) }}#}
+        {{ logoRudolf(isLink=true, isContrastColor=isLogoContrastColor) }}
         {{ divider() }}
       </div>
 

@@ -1,4 +1,5 @@
 {% from "blocks/logo.njk" import logo %}
+{% from "blocks/logo-rudolf.njk" import logoRudolf %}
 
 {% macro divider(isLarge) %}
   <span class="header__divider {% if isLarge %}header__divider--large{% endif %} font-theme font-theme--code" aria-hidden="true"></span>
@@ -18,7 +19,8 @@
       <div class="header__inner header__inner--main font-theme font-theme--code">
         <ul class="header__breadcrumbs breadcrumbs base-list">
           <li class="breadcrumbs__item">
-            {{ logo(class="header__logo", isLink=true, isContrastColor=isLogoContrastColor) }}
+{#            {{ logo(class="header__logo", isLink=true, isContrastColor=isLogoContrastColor) }}#}
+            {{ logoRudolf(class="header__logo", isLink=true, isContrastColor=isLogoContrastColor) }}
             {{ divider() }}
           </li>
 
@@ -66,7 +68,8 @@
 
     <div class="header__inner header__inner--menu">
       <div class="header__logo">
-        {{ logo(isLink=true) }}
+{#        {{ logo(isLink=true) }}#}
+        {{ logoRudolf(isLink=true) }}
         {{ divider(isLarge=true) }}
       </div>
 
